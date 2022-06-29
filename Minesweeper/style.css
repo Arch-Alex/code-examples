@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(var(--colCSS), 60px);
+  grid-template-rows: repeat(var(--rowCSS), 60px);
+  gap: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
+#text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 1%;
+}
+
+.mine {
+  background-color: red;
+}
+.clear {
+  background-color: lightblue;
+}
+
+#button {
+  margin: 20px;
+  border: 1px solid black;
+}
+
+input {
+  width: 100px;
+}
+
+#button:hover {
+  cursor: pointer;
+}
